@@ -34,6 +34,8 @@ public class Integrator extends Thread {
                 step = task.getStep();
                 result = Functions.integrate(task.getFunction(), leftX, rightX, step);
 
+                task.setFunction(null);
+
                 semaphore.release();
 
                 System.out.printf("Result %.2f %.2f %.6f %.6f%n",

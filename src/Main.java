@@ -1,5 +1,4 @@
 import functions.*;
-
 import functions.basic.Exp;
 import functions.basic.Log;
 import threads.*;
